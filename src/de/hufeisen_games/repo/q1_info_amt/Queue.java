@@ -1,5 +1,5 @@
- 
- 
+package de.hufeisen_games.repo.q1_info_amt;
+
 
 /**
  * <p>

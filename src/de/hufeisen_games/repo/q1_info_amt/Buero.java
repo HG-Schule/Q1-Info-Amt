@@ -1,31 +1,28 @@
 package de.hufeisen_games.repo.q1_info_amt;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Buero {
 
     private Queue<Person> queue;
 
     public Buero() {
-        this.queue = new LinkedList<>();
+        this.queue = new Queue<>();
     }
 
     public void hintenAnstellen(Person person) {
 
-        queue.add(person);
+        queue.enqueue(person);
 
     }
 
     public void einlassen() {
 
-        queue.remove();
+        queue.dequeue();
 
     }
 
     public void sprechstundeBeenden() {
 
-        queue.clear();
+        while(!queue.isEmpty()) queue.dequeue();
 
     }
 
