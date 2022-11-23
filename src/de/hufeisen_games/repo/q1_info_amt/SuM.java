@@ -4,14 +4,19 @@ public class SuM {
 
     public static void main(String[] args) {
 
-        Buero buero = new Buero();
+        Essensausgabe essensausgabe = new Essensausgabe();
 
-        buero.hintenAnstellen(new Buero.Person("Test"));
+        essensausgabe.biberAnstellen(new Biber("groß"));
+        essensausgabe.biberAnstellen(new Biber("klein"));
+        essensausgabe.biberAnstellen(new Biber("groß"));
+        essensausgabe.biberAnstellen(new Biber("groß"));
 
-        buero.einlassen();
+        essensausgabe.tellerStapeln(new Teller("groß"));
+        essensausgabe.tellerStapeln(new Teller("groß"));
+        essensausgabe.tellerStapeln(new Teller("klein"));
+        essensausgabe.tellerStapeln(new Teller("groß"));
 
-        buero.sprechstundeBeenden();
-
+        essensausgabe.biberWollenTeller();
     }
 
 }
